@@ -1,0 +1,340 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello User!");
+    System.out.println("Welcome to Eco-I!");
+    System.out.println("Investing, Spending, and Saving... while also being Eco Friendly!");
+    System.out.println("------------------------------------------------------");
+    choices();
+    }
+
+static void choices()
+  {
+    Scanner initialChoice = new Scanner(System.in);
+    System.out.println("What would you like to access?");
+    System.out.println("(1) Healthy Spending and Saving Habits");
+    System.out.println("(2) Investing like a PRO");
+    System.out.println("(3) SEC Investments");
+    System.out.println("(4) Savings/Spending Plan");
+    System.out.println("(5) ECO Friendly");
+    int choice = initialChoice.nextInt();
+    if (choice == 1)
+    {
+      healthySpendingHabits();
+    }
+    if(choice == 2)
+    {
+      investingPro();
+    }
+    if(choice == 3)
+    {
+      secInvestments();
+    }
+    if (choice == 4)
+    {
+      savingsPlan();
+    }
+    if (choice == 5)
+    {
+      ecoFriendlyChoices();
+    }
+  }  
+
+static void ecoFriendlyChoices()
+  {
+     System.out.println("Eco-I values healthy finacial decisions and financial decisions that also benefit the environment...");
+    System.out.println("For every eco-friendly smart financial decision you make... this dirty virtual earth will become cleaner... the more smart and eco-friendly decisions you make... the faster the earth gets cleaner");
+System.out.println("             _____");
+System.out.println("          .-'.  ':'-.");
+System.out.println("        .''::: .:    '.");
+System.out.println("       |   :::::'      |");
+System.out.println("      ;.    ':' `       ;");
+System.out.println("      |       '..       |");
+System.out.println("      ; '      ::::.    ;");
+System.out.println("       |       '::::   |");
+System.out.println("        '.      :::  .'");
+System.out.println("           '-.___'_.-");
+
+
+    System.out.println("Here is a short list of possible decisions you can make!");
+    System.out.println("Save over $10000");
+    System.out.println("Transfer all Paper Bills to Electronic Bills");
+    System.out.println("Use Reusable Paper and Shopping Bags");
+    System.out.println("Adopt new Renewable Energy (i.e Solar Panals)");
+    System.out.println("Invest in a Composting Bin");
+    System.out.println("Offset your carbon footprint");
+    System.out.println("Use Public Transportation");
+    System.out.println("Use only 25% of your money that is dedicated to wants");
+    System.out.println("Use Substianial Banking: banks that offer green banking products");
+    int cleanEarth = 0;
+    for(int i = 0; i < 9; i++)
+    {
+      System.out.println("Press 1 if you have completed any of these tasks? Press 2 if you want to exit...");
+      Scanner ecoChoice = new Scanner(System.in);
+      int answer = ecoChoice.nextInt();
+      if (answer == 1)
+      {
+        System.out.println("Awesome, which one?");
+        Scanner ecoChoice1 = new Scanner(System.in);
+        String ab = ecoChoice1.nextLine(); 
+        System.out.println("Great");
+        cleanEarth = cleanEarth+10;
+        System.out.println("Great Job! Your Earth is now... " + cleanEarth + "% clean");
+      }
+      else{
+        System.out.println("Transfering you back to home");
+        choices();
+      }
+    }
+
+  }
+
+static void secInvestments()
+  {
+    System.out.println("------------------------------------------------------");
+    Scanner initialChoice = new Scanner(System.in);
+    System.out.println("Would you like to access recent SEC Investments(1) or General Stock Information (2)");
+    int choice = initialChoice.nextInt();
+    if (choice == 1)
+    {
+      System.out.println("Recent SEC Investments");
+      System.out.println("------------------------------------------------------");
+      System.out.println("Top 5 Insider BUYs");
+      System.out.print("Tisch Benjamin J: Bought 33000 shares of L (Avg Cost of Share: $56.91)");
+      System.out.print("Perceptive Advisors LLC: Bought 5416248 shares of LYRA (Avg Cost of Share: $1.66)");
+      System.out.print("NBVM GP, LCC: Sold Bought 2708124 shares of LYRA (Avg Cost of Share: $1.66)");
+      System.out.print("Pershing Square Capital Management, L.P: Bought 52510 shares of HHC (Avg Cost of Share: $74.37)");
+      System.out.print("SRB Corp: Sold 37595 shares of Loews Corp (Avg Cost of Share: $73.42)");
+      System.out.println("------------------------------------------------------");
+      System.out.println("Top 5 Insider SELLS");
+      System.out.println("Plank Kevin A: Sold 16000000 shares of UA (Avg Cost of Share: $6.13)");
+      System.out.println("Gebbia Joeseph: Sold 350000 shares of ABNB (Avg Cost of Share: $105.83)");
+      System.out.println("Carroll Jill: Sold 340720 shares of ACLX (Avg Cost of Share: $41.71)");
+      System.out.println("Sarowitz Steven I: Sold 72339 shares of PCTY (Avg Cost of Share: $6.13)");
+      System.out.println("Bancel Stephane: Sold 80000 shares of MRNA (Avg Cost of Share: $127.44)");
+      System.out.println("**All SEC Insider Investment DATA is from thinksabio**");
+      System.out.println("------------------------------------------------------");
+      System.out.println("After you are done reading please click on, 1, to return back to the Home Page");      
+      Scanner hubChoice = new Scanner(System.in);
+      int choice1 = hubChoice.nextInt();
+      if (choice1 == 1)
+      {
+        System.out.println("Transfering you back to the home page...");
+        choices();
+      }
+      else{
+        System.out.println("Too bad... Transfering you back to the home page...");
+        choices();
+      }        
+    }
+    if (choice == 2)
+    {
+      System.out.println("Trending Stock Data");
+      System.out.println("APPLE INC (AAPL): $180.95");
+      System.out.println("MICROSOFT CORP (MSFT): $335.40");
+      System.out.println("TESLA INC (TSLA): $213.97");
+      System.out.println("ALIBABA GROUP HOLDINGS LTD (BABA): $84.27");
+      System.out.println("META PLATFORMS INC (META): $272.61");
+      System.out.println("AMAZON.COM INC (AMZN): $124.25");
+      System.out.println("ALPHABET INC CLASS A (GOOGL): $124.67");
+      System.out.println("FORD MOTOR CO (F): $12.39");
+      System.out.println("NEXSTAR Media Group INC (NXST): $157.67");
+      System.out.println("**DATA IS NOT LIVE**");
+      System.out.println("------------------------------------------------------");
+      System.out.println("After you are done reading please click on, 1, to return back to the Home Page");      
+      Scanner hubChoice = new Scanner(System.in);
+      int choice1 = hubChoice.nextInt();
+      if (choice1 == 1)
+      {
+        System.out.println("Transfering you back to the home page...");
+        choices();
+      }
+      else{
+        System.out.println("Too bad... Transfering you back to the home page...");
+        choices();
+      }        
+    }
+  }
+
+static void investingPro()
+  {
+      System.out.println("------------------------------------------------------");
+      System.out.println("Set Clear Financial Goals: Deine your objectives (i.e long-term wealth accumulation, retirement, or saving for a specific goal)");
+      System.out.println("");
+      System.out.println("Diversify your portfolio: Spread your investments across many different assets, industries, demographics, to reduce risk as mitigates potential losses");
+      System.out.println("");
+      System.out.println("Conduct Thorough Research: Before investing, make sure you research your market options wisely and understand their financial health, growth prospects, competitive advantages, and any potential risks");
+      System.out.println("");
+      System.out.println("Invest for Long-Term: Investing is generally more effective when done with a purpose for the future. Short-term market investments are bullish and can not be well predicted, but historically, long-term invests tend to generate much more consistent and predicted results");
+      System.out.println("");
+      System.out.println("Stay Informed: Keep up with financial news, trends, and other indicators that may impact your investments. Make sure to stay informed and watch out for any out of the blue news that might drastically impact your investments");
+      System.out.println("");
+      System.out.println("Monitor and Rebalance your Portfolio: Regularly view your portfolio to see if it aligns according to your investment goals... and if not... make sure to rebalance your portfolio so it does!");
+      System.out.println("");
+      System.out.println("Consider Tax Implications: Undersand Tax Implications on your account, and also make sure to take advantage of accounts such as IRAs or 401(k) plans that can provide tax benefits to you investments.");
+      System.out.println("------------------------------------------------------");
+      System.out.println("After you are done reading please click on, 1, to return back to the Home Page");      
+      Scanner hubChoice = new Scanner(System.in);
+      int choice = hubChoice.nextInt();
+      if (choice == 1)
+      {
+        System.out.println("Transfering you back to the home page...");
+        choices();
+      }
+      else{
+        System.out.println("Too bad... Transfering you back to the home page...");
+        choices();
+      }        
+  }
+  
+  static void healthySpendingHabits()
+  {
+    System.out.println("------------------------------------------------------");
+    System.out.println("Here are some awesome financial tips...");
+    System.out.println("Follow a Budget");
+    System.out.println("Set Financial Goals");
+    System.out.println("Pay Yourself First");
+    System.out.println("Pay Bills on Time");
+    System.out.println("Find and Stick to a Debt Repayment Plan");
+    System.out.println("Check your Bank Account Each Day");
+    System.out.println("Invest in Insurance");
+    System.out.println("Save for Retirement");
+    System.out.println("Plan for Emergencies");
+    System.out.println("Don't go into Lifestyle Creep");
+    System.out.println("After you are done reading please click on, 1, to return back to the Home Page");
+    Scanner hubChoice = new Scanner(System.in);
+    int choice = hubChoice.nextInt();
+    if (choice == 1)
+    {
+      System.out.println("Transfering you back to the home page...");
+      choices();
+    }
+    else{
+      System.out.println("Too bad... Transfering you back to the home page...");
+      choices();
+    }
+  }
+
+static void savingsPlan()
+  {
+  Scanner a = new Scanner(System.in);
+  System.out.println("------------------------------------------------------");
+  System.out.println("Welcome!");
+  System.out.println("Please enter your approximate monthly (after-tax) income: ");
+  int income = a.nextInt();
+  double needs = income*0.5;
+  double wants = income*0.3;
+  double savings = income*0.2;
+  System.out.println("------------------------------------------------------");
+  System.out.println("Suggested Cost Breakdown:");
+  System.out.println("Needs = $" + needs);
+  System.out.println("Wants = $" + wants);
+  System.out.println("Savings = $" + savings);
+  System.out.println("------------------------------------------------------");
+  System.out.println("Personalized Spending Calculator:");
+  System.out.println("Current Stats: ");
+  System.out.println("$$ Left for Needs: $" + needs);
+  System.out.println("$$ Left for Wants: $" + wants);
+  System.out.println("$$ Left for Savings: $" + savings);
+  System.out.println("------------------------");
+  System.out.println("Would you like to record a monetary spending?");
+  Scanner spendingChoice = new Scanner(System.in);
+  String x = spendingChoice.nextLine();
+  if (x.equals("yes"))
+  {
+      System.out.println("Awesome!");
+      System.out.println("Does it fall under the needs, wants or savings category?");
+      Scanner categoryChoice = new Scanner(System.in);
+      String response2 = categoryChoice.nextLine();
+        if (response2.equals("needs"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          needs = needs - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);
+        }
+        if (response2.equals("wants"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          wants = wants - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);  
+        }
+        if(response2.equals("savings"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          savings = needs - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);
+        }
+  }
+  else{
+    System.out.println("Transfering you to the Home Page...");
+    System.out.println("------------------------------------------------------");
+    choices();
+  }
+
+  System.out.println("Would you like to record another monetary spending?");
+  Scanner spendingChoice1 = new Scanner(System.in);
+  String x1 = spendingChoice.nextLine();
+  if (x1.equals("yes"))
+  {
+      System.out.println("Awesome!");
+      System.out.println("Does it fall under the needs, wants or savings category?");
+      Scanner categoryChoice1 = new Scanner(System.in);
+      String response2 = categoryChoice1.nextLine();
+        if (response2.equals("needs"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          needs = needs - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);
+        }
+        if (response2.equals("wants"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          wants = wants - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);  
+        }
+        if(response2.equals("savings"))
+        {
+          System.out.println("How much $$ did you spend?");
+          double moneyValue = a.nextDouble();
+          savings = needs - moneyValue;
+          System.out.println("Current Stats: ");
+          System.out.println("$$ Left for Needs: $" + needs);
+          System.out.println("$$ Left for Wants: $" + wants);
+          System.out.println("$$ Left for Savings: $" + savings);
+        }
+    System.out.println("Transfering you to the Home Page...");
+    System.out.println("------------------------------------------------------");
+    choices();
+  }
+  else{
+    System.out.println("Transfering you to the Home Page...");
+    System.out.println("------------------------------------------------------");
+    choices();
+  }
+  
+    
+   
+  
+  }
+}
+
